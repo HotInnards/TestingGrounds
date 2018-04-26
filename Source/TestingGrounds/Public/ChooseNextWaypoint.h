@@ -7,7 +7,7 @@
 #include "ChooseNextWaypoint.generated.h"
 
 /**
- * 
+ * Class to handle AI moving between different waypoints in the world
  */
 UCLASS()
 class TESTINGGROUNDS_API UChooseNextWaypoint : public UBTTaskNode
