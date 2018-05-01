@@ -43,6 +43,10 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = Gameplay)
 	TSubclassOf<class AGun> GunBlueprint;
 
+	/** Whether to use motion controller location for aiming. */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+	uint32 bUsingMotionControllers : 1;
+
 protected:
 
 	/** Resets HMD orientation and position in VR. */

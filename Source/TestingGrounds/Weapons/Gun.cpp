@@ -58,6 +58,16 @@ AGun::AGun()
 void AGun::BeginPlay()
 {
 	Super::BeginPlay();
+
+	// Show or hide the two versions of the gun based on whether or not we're using motion controllers.
+	if (bUsingMotionControllers)
+	{
+		VR_Gun->SetHiddenInGame(false, true);
+	}
+	else
+	{
+		VR_Gun->SetHiddenInGame(true, true);
+	}
 	
 }
 
