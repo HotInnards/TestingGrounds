@@ -29,7 +29,7 @@ public:
 	TSubclassOf<class AGun> GunBlueprint;
 
 	UFUNCTION(BlueprintCallable, Category = Gameplay)
-	void Fire();
+	void PullTrigger();
 
 protected:
 	virtual void BeginPlay();
